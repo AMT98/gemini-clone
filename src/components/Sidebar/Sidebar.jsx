@@ -9,7 +9,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <img
-          onClick={() => setExtended((prev: unknown) => !prev)}
+          onClick={() => setExtended((prev) => !prev)}
           className="menu"
           src={assets.menu_icon}
           alt="menuIcon"
