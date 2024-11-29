@@ -50,7 +50,16 @@ const Main = () => {
             </div>
           </>
         ) : (
-          <div className="result"></div>
+          <div className="result">
+            <div className="result-title">
+              <img src={assets.user_icon} alt="" />
+              <p>{recentPrompt}</p>
+            </div>
+            <div className="result-data">
+              <img src={assets.gemini_icon} alt="" />
+              <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
+            </div>
+          </div>
         )}
 
         <div className="main-bottom">
