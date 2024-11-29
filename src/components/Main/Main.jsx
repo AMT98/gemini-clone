@@ -77,6 +77,11 @@ const Main = () => {
               value={input}
               type="text"
               placeholder="Enter a prompt here"
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && input) {
+                  onSent(); 
+                }
+              }}
             />
             <div>
               <img src={assets.gallery_icon} alt="" />
